@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
+import 'CourseScreen/CourseScreen.dart';
 import 'HomeScreen/HomeScreen.dart';
 
 void main(){
@@ -16,7 +17,7 @@ class Courseapp extends StatelessWidget{
   Widget build(BuildContext context) {
   return GetMaterialApp(
     debugShowCheckedModeBanner: false,
-    home: HomeScreen(),
+    home:  CourseScreen(),
 
   );
   }
