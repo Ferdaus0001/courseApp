@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 
 import 'CourseScreen/CourseScreen.dart';
 import 'HomeScreen/HomeScreen.dart';
+import 'LoginScreen/LoginScreen.dart';
+import 'SplashScreen/SplashScreen.dart';
 
 void main(){
   runApp(Courseapp());
@@ -17,7 +19,7 @@ class Courseapp extends StatelessWidget{
   Widget build(BuildContext context) {
   return GetMaterialApp(
     debugShowCheckedModeBanner: false,
-    home:  CourseScreen(),
+    home: SplashScreen(),
 
   );
   }
