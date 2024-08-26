@@ -28,8 +28,19 @@ class ContanerScreen extends StatelessWidget {
             ],
           ),
         ),
+        centerTitle: true,
         elevation: 1,
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon((Icons.search))),
+          SizedBox(width: 32),
+          IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none)),
+        ],
+
       ),
+
+
+
+
     );
   }
 }

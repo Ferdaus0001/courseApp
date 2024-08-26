@@ -1,7 +1,9 @@
+import 'package:courseapp/LongOutScreen/SingScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../CountanerScreen/CountanerScreen.dart';
+
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -89,8 +91,20 @@ class LoginScreen extends StatelessWidget {
 
                   ),
                 ),
+              ),
+              Column(
+                children: [
+                  SizedBox(height: 21,),
+                  ElevatedButton(onPressed: (){
+
+                    Get.to( SingUpScreen() );
+                  }, child:
+                  Text('SingUp',style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,color: Colors.blue),)),
+                ],
               )
+
             ],
+
           ),
         ),
       ),

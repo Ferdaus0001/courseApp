@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:courseapp/LoginScreen/LoginScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 import '../main.dart';
 
@@ -29,10 +30,9 @@ Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> LoginS
         child: Container(
           height: double.infinity,
           width: double.infinity,
+          child: Lottie.asset('assets/Image/Animation - 1724662947746.json'),
           // color: Colors.blue,
-        child:   Image(image:  NetworkImage('https://miro.medium.com'
-            '/v2/resize:fit:1400/format:webp/1*o3uWxNqRWqE8BooPMtmOMQ.jpeg',),fit: BoxFit.cover,)
-        ),
+        )
       ),
     );
   }
