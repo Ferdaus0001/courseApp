@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 
 import '../CountanerScreen/CountanerScreen.dart';
 import '../Sing Screen/SingScreen.dart';
-import '../SirAddImageHomeScreen/SirAddImageHomeScreen.dart';
 
 
 class LoginScreen extends StatelessWidget {
@@ -78,7 +77,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 19,),
               InkWell(
                 onTap: (){
-                  Get.to(SirAddHomeScreen());
+                  Get.to(ContanerScreen());
                 },
                 child: Container(
                   height: 69,
