@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+
 class CourseScreen extends StatefulWidget {
   const CourseScreen({super.key});
 
@@ -71,24 +72,21 @@ class _CourseScreenState extends State<CourseScreen> {
               height: 22,
             ),
             Row(
-              children: [
-              ],
+              children: [],
             )
           ],
-
         ),
-
-
       ),
-
-
-bottomNavigationBar: SalomonBottomBar(items: [
-
-SalomonBottomBarItem(icon: Icon(Icons.home_outlined,color: Colors.blue,), title: Text('Home')),
-  
-],),
-
+      bottomNavigationBar: SalomonBottomBar(
+        items: [
+          SalomonBottomBarItem(
+              icon: Icon(
+                Icons.home_outlined,
+                color: Colors.blue,
+              ),
+              title: Text('Home')),
+        ],
+      ),
     );
-
   }
 }

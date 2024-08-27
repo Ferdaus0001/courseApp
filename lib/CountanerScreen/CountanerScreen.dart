@@ -3,7 +3,11 @@ import 'package:courseapp/RountPage/AccountScreen.dart';
 import 'package:courseapp/RountPage/LiveScreen.dart';
 import 'package:courseapp/VideoHomePage/VideoScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+
+import '../CommantPage/CommantScreen.dart';
+import '../NotificationScreen/NotifacationScreen.dart';
 
 class ContanerScreen extends StatefulWidget {
  const   ContanerScreen({super.key});
@@ -48,9 +52,13 @@ class _ContanerScreenState extends State<ContanerScreen> {
         centerTitle: true,
         elevation: 1,
         actions: [
-          IconButton(onPressed: (){}, icon: Icon((Icons.search))),
+          IconButton(onPressed: (){
+            Get.to(CommantScreen());
+          }, icon: Icon((Icons.mode_comment_outlined))),
           SizedBox(width: 32),
-          IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none)),
+          IconButton(onPressed: (){
+            Get.to(NotifacatinScreen());
+          }, icon: Icon(Icons.notifications_none)),
         ],
 
       ),

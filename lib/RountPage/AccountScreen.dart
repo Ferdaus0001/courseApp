@@ -11,16 +11,16 @@ class AccountScreen extends StatelessWidget {
 
 
     body:  Padding(
-      padding: const EdgeInsets.all(7.0),
+      padding: const EdgeInsets.all(11.0),
       child: Column(
 
         children: [
-          SizedBox(height: 2,),
+          SizedBox(height: 4,),
           const CircleAvatar(
           radius: 70,
-            backgroundImage: NetworkImage('assets/Image/ferdaus.jpg'),
+            backgroundImage: AssetImage('assets/Image/ferdaus.jpg'),
           ),
-          SizedBox(height: 2,),
+          SizedBox(height: 4,),
           Card(
             child: InkWell(
               onTap: (){},
@@ -35,7 +35,7 @@ class AccountScreen extends StatelessWidget {
             ),
           ),
          /// Card Two and ListTile Two
-          SizedBox(height:2,),
+          SizedBox(height:4,),
           Card(
             child: InkWell(
               onTap: (){},
@@ -49,7 +49,7 @@ class AccountScreen extends StatelessWidget {
             ),
           ),
           // Card Three and ListTile Three
-          SizedBox(height: 2,),
+          SizedBox(height: 4,),
           Card(
             child: InkWell(
               onTap: (){},
@@ -62,7 +62,7 @@ class AccountScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 2,),
+          SizedBox(height: 4,),
           Card(
             child: InkWell(
               onTap: (){},
@@ -75,7 +75,7 @@ class AccountScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 2,),
+          SizedBox(height: 11,),
           ElevatedButton(onPressed: (){
 
             Get.snackbar('Massage ', 'Edit Complete  Sir ');
@@ -84,7 +84,7 @@ class AccountScreen extends StatelessWidget {
           },
               child: Text('Edite  Profile ',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.blue,),),
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(11),
+              padding: EdgeInsets.all(14),
 
             ),
           ),
