@@ -9,11 +9,22 @@ class CommantScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Commant ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22,color: Colors.blue),),
         backgroundColor: Colors.white,
-        elevation: 1,
+        elevation: 5,
         centerTitle: true,
       ),
 
+body: Container(
+  decoration: BoxDecoration(
+    image: DecorationImage(
+      image: AssetImage('assets/Image/register.png'),
+    )
+  ),
+  child: Row(
+    children: [
 
+    ],
+  ),
+),
 
     );
   }

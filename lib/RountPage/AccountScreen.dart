@@ -76,6 +76,19 @@ class AccountScreen extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 4,),
+            Card(
+              child: InkWell(
+                onTap: (){},
+                child: ListTile(
+                  focusColor: Colors.blueAccent,
+                  title: Text('Gender'),
+                  subtitle: Text(' Male '),
+                  leading: Icon(Icons.boy),
+                  trailing: Icon(Icons.arrow_forward,color: Colors.blue,),
+                ),
+              ),
+            ),
             SizedBox(height: 11,),
             ElevatedButton(onPressed: (){
       
