@@ -9,55 +9,40 @@ class LiveScreen extends StatefulWidget {
 }
 
 class _LiveScreenState extends State<LiveScreen> {
-  final String VideoUrl = ' https://youtu.be/N9zFcs4Gidw?si=A7hCesG9H_6G47ku';
-  final String VideoUrl1 = 'https://youtu.be/PYC0PFCyj8Y?si=7NBY5pGoXfbKNIq5';
-  final String VideoUrl2 = '';
-  final String VideoUrl3 = '';
-  final String VideoUrl4 = '';
-  final String VideoUrl5 = '';
-  final String VideoUrl6 = '';
-  final String VideoUrl7 = '';
-  final String VideoUrl8 = '';
-  final String VideoUrl9 = '';
-  final String VideoUrl10 = '';
-  YoutubePlayerController? _controller;
+  final String videoUrl1 = 'https://youtu.be/N9zFcs4Gidw?si=A7hCesG9H_6G47ku';
+
+
+
+
   YoutubePlayerController? _controller1;
+
+
   @override
   void initState() {
-    final VideoID = YoutubePlayer.convertUrlToId(VideoUrl);
-    _controller = YoutubePlayerController(initialVideoId: VideoID!,
-      flags: YoutubePlayerFlags(autoPlay: false),
-    );
     super.initState();
+
+    _controller1 = YoutubePlayerController(
+      initialVideoId: YoutubePlayer.convertUrlToId(videoUrl1)!,
+      flags: const YoutubePlayerFlags(autoPlay: false),
+    );
+
+
+
   }
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: ListView(
-          children: [
-            YoutubePlayer(controller: _controller!),
-            SizedBox(height: 12,),
-            YoutubePlayer(controller: _controller!),
-            SizedBox(height: 12,),
-            YoutubePlayer(controller: _controller!),
-            SizedBox(height: 12,),
-            YoutubePlayer(controller: _controller!),
-            SizedBox(height: 12,),
-            YoutubePlayer(controller: _controller!),
-            SizedBox(height: 12,),
-            YoutubePlayer(controller: _controller!),
-            SizedBox(height: 12,),
-            YoutubePlayer(controller: _controller!),
-            SizedBox(height: 12,),
-            YoutubePlayer(controller: _controller!),
+        children: [
+          YoutubePlayer(controller: _controller1!),
+          const SizedBox(height: 12),
 
-          ],
-
-
-
-
+     
+        ],
       ),
     );
   }
+
+
 }
