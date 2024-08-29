@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../CourseInformationPage/FlutterCoruseInformationScreen.dart';
+import '../PythonCourseInformationPage/PythonCourseInformationScreen.dart';
+import '../SirAddImageHomeScreen/Repoin_Sir_ProfileScreen.dart';
+import '../SirAddImageHomeScreen/SirAddImageHomeScreen.dart';
 
 class VideoScreen extends StatelessWidget {
   const VideoScreen({super.key});
@@ -19,21 +25,34 @@ class VideoScreen extends StatelessWidget {
                 child: Row(
                   children: [
 
-                    Container(
-                  
-                      height: 200,
-                      width: 200,
-                      color: Colors.purple,
-                      child: Image(image: AssetImage('assets/Image/AzidVai.jpg'),fit: BoxFit.cover,),
+                    InkWell(
 
+                      onTap: (){
+
+                        Get.to(SirAddHomeScreen());
+                      },
+                      child: Container(
+
+                        height: 200,
+                        width: 200,
+                        color: Colors.purple,
+
+                        child: Image(image: AssetImage('assets/Image/AzidVai.jpg'),fit: BoxFit.cover,),
+
+                      ),
                     ),
                     SizedBox(width: 5,),
-                    Container(
-                
-                      height: 200,
-                      width: 200,
-                      color: Colors.red,
-                      child: Image(image: NetworkImage('assets/Image/Screenshot 2024-08-27 224006.png'),fit: BoxFit.fill,),
+                    InkWell(
+                      onTap: (){
+                        Get.to( RepoinSirProfileHomeScreen());
+                      },
+                      child: Container(
+
+                        height: 200,
+                        width: 200,
+                        color: Colors.red,
+                        child: Image(image: NetworkImage('assets/Image/Screenshot 2024-08-27 224006.png'),fit: BoxFit.fill,),
+                      ),
                     ),
                     SizedBox(width: 5,),
                     Container(
@@ -68,20 +87,30 @@ class VideoScreen extends StatelessWidget {
 
             // Column
             SizedBox(height: 7,),
-            Container(
-              height: 200,
-              width: double.infinity,
-              color: Colors.blue,
-              child: Image(image: NetworkImage('assets/Image/course.jpg'),fit: BoxFit.cover,),
-              padding: EdgeInsets.all(3),
+            InkWell(
+              onTap: (){
+                Get.to(FlutterCourseInformationScreen());
+              },
+              child: Container(
+                height: 200,
+                width: double.infinity,
+                color: Colors.blue,
+                child: Image(image: NetworkImage('assets/Image/flutercourse.jpeg'),fit: BoxFit.cover,),
+                padding: EdgeInsets.all(3),
+              ),
             ),
             SizedBox(height: 7,),
-            Container(
-              padding: EdgeInsets.all(3),
-              height: 200,
-              width: double.infinity,
-              color: Colors.blue,
-              child: Image(image: NetworkImage('assets/Image/2885309.jpg'),fit: BoxFit.cover,),
+            InkWell(
+              onTap: (){
+                Get.to(PythonCourseInformationPage());
+              },
+              child: Container(
+                padding: EdgeInsets.all(3),
+                height: 200,
+                width: double.infinity,
+                color: Colors.blue,
+                child: Image(image: NetworkImage('assets/Image/python.jpg'),fit: BoxFit.cover,),
+              ),
             ),
             SizedBox(height: 8,),
             Container(
@@ -175,6 +204,7 @@ class VideoScreen extends StatelessWidget {
             ),
             SizedBox(height: 8,),
             Container(
+
               padding: EdgeInsets.all(3),
               child: Image(image: NetworkImage('assets/Image/job.jpg'),fit: BoxFit.cover,),
               height: 200,

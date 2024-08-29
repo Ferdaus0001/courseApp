@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-class SirAddHomeScreen extends StatelessWidget {
-  const SirAddHomeScreen({super.key});
+class RepoinSirProfileHomeScreen extends StatelessWidget {
+  const RepoinSirProfileHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class SirAddHomeScreen extends StatelessWidget {
               ),
               const CircleAvatar(
                 radius: 70,
-                backgroundImage: AssetImage('assets/Image/AzidVai.jpg'),
+                backgroundImage: AssetImage('assets/Image/Screenshot 2024-08-27 224006.png'),
               ),
               SizedBox(
                 height: 2,
@@ -56,8 +56,23 @@ class SirAddHomeScreen extends StatelessWidget {
                     selectedColor: Colors.blue,
                     focusColor: Colors.blueAccent,
                     title: Text('JOB'),
-                    subtitle: Text(' Selior Flutter App Developer  '),
+                    subtitle: Text(' Experts flutter  App developer'),
                     leading: Icon(Icons.person),
+                    trailing: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.blue,
+                    ),
+                  ),
+                ),
+              ), Card(
+                child: InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    selectedColor: Colors.blue,
+                    focusColor: Colors.blueAccent,
+                    title: Text('Company'),
+                    subtitle: Text('  ~Universe IT institute '),
+                    leading: Icon(Icons.home_repair_service_outlined),
                     trailing: Icon(
                       Icons.arrow_forward,
                       color: Colors.blue,
@@ -67,7 +82,7 @@ class SirAddHomeScreen extends StatelessWidget {
               ),
 
               SizedBox(
-                height: 2,
+                height: 1,
               ),
               Card(
                 child: InkWell(
@@ -76,7 +91,7 @@ class SirAddHomeScreen extends StatelessWidget {
                     selectedColor: Colors.blue,
                     focusColor: Colors.blueAccent,
                     title: Text('Name '),
-                    subtitle: Text('Al Azaid '),
+                    subtitle: Text('Wail Ullah Ripon '),
                     leading: Icon(Icons.person),
                     trailing: Icon(
                       Icons.arrow_forward,
@@ -96,7 +111,7 @@ class SirAddHomeScreen extends StatelessWidget {
                   child: ListTile(
                     focusColor: Colors.blueAccent,
                     title: Text(' Phone Number  '),
-                    subtitle: Text(' 01726176754 '),
+                    subtitle: Text('  017511383328 '),
                     leading: Icon(Icons.phone_in_talk_sharp),
                     trailing: Icon(
                       Icons.arrow_forward,
@@ -125,7 +140,7 @@ class SirAddHomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 2,
+                height: 1,
               ),
               Card(
                 child: InkWell(
@@ -143,7 +158,7 @@ class SirAddHomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 5,
+                height: 2,
               ),
               ElevatedButton(
                 onPressed: () {
