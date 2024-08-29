@@ -5,6 +5,7 @@ import '../CourseInformationPage/FlutterCoruseInformationScreen.dart';
 import '../PythonCourseInformationPage/PythonCourseInformationScreen.dart';
 import '../SirAddImageHomeScreen/Repoin_Sir_ProfileScreen.dart';
 import '../SirAddImageHomeScreen/SirAddImageHomeScreen.dart';
+import '../WebCourseInformationPage/WebDeveloperCourseInformationScreen.dart';
 
 class VideoScreen extends StatelessWidget {
   const VideoScreen({super.key});
@@ -113,12 +114,17 @@ class VideoScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 8,),
-            Container(
-              padding: EdgeInsets.all(3),
-              child: Image(image: NetworkImage('assets/Image/postman_online_4.jpg'),fit: BoxFit.cover,),
-              height: 200,
-              width: double.infinity,
-              color: Colors.blue,
+            InkWell(
+              onTap: (){
+                Get.to(WebDeveloperCourseInformationScreen());
+              },
+              child: Container(
+                padding: EdgeInsets.all(3),
+                child: Image(image: NetworkImage('assets/Image/web.webp'),fit: BoxFit.cover,),
+                height: 200,
+                width: double.infinity,
+                color: Colors.blue,
+              ),
             ),
             SizedBox(height: 8,),
             Container(
