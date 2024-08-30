@@ -7,13 +7,13 @@ import 'LoginScreen/LoginScreen.dart';
 import 'SplashScreen/SplashScreen.dart';
 
 void main(){
-  runApp(CourseApp());
+  runApp(Courseapp());
 }
 
 
 
-class CourseApp extends StatelessWidget{
-  const CourseApp({super.key});
+class Courseapp extends StatelessWidget{
+  const Courseapp({super.key});
 
   @override
   Widget build(BuildContext context) {
